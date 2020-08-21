@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MessageActivity">
+
+<!--    App bar for showing the user information starts here-->
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/barLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/seaBluePrimaryDark"
+            app:popupTheme="@style/MenuStyle"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            >
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_height="@dimen/_25sdp"
+                android:layout_width="@dimen/_25sdp"
+                android:id="@+id/profileImage"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/profileName"
+                android:text="username"
+                android:layout_marginLeft="20dp"
+                android:layout_marginStart="20dp"
+                android:textColor="#fff"
+                android:textSize="18sp"
+                />
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+<!--Recycler view for showing messages starts here-->
+        <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/barLayout"
+        android:layout_above="@id/bottomComponents"
+        />
+
+
+<!--    The layout for showing the text field end send buttons starts here-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:background="#fff"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/bottomComponents"
+        >
+
+        <EditText
+            android:id="@+id/messageInputField"
+            android:inputType="text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/back_design"
+            android:hint="Type A Message Here"
+            android:padding="@dimen/_10sdp"
+            android:textColorHint="@color/seaBluePrimaryDark"
+            android:layout_margin="@dimen/_5sdp"
+            android:layout_toLeftOf="@+id/sendBtn"
+            android:layout_centerVertical="true"
+            />
+
+        <ImageButton
+            android:id="@+id/sendBtn"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_margin="@dimen/_5sdp"
+            android:src="@drawable/ic_send_blue"
+            android:background="@drawable/back_design"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"/>
+
+<!--        <ImageButton-->
+<!--            android:id="@+id/mediaBtn"-->
+<!--            android:layout_width="40dp"-->
+<!--            android:layout_height="40dp"-->
+<!--            android:background="@drawable/ic_attach_green"-->
+<!--            android:layout_toLeftOf="@id/sendBtn"-->
+<!--            />-->
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

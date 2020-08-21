@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+
+
+<!--    Default Themes Colors  -->
+    <color name="customColorPrimaryDark">#226e6e</color>
+    <color name="customColorPrimary">#226e6e</color>
+    <color name="customColorAccent">#ff4081</color>
+
+
+<!--    Green Theme Colors  -->
+    <color name="splashColor">#499C54</color>
+    <color name="appBaseColor">#4C9C04</color>
+    <color name="appGradientColor">#AE90F77A</color>
+
+
+<!--    Teal Theme Colors  -->
+    <color name="tealPrimary">#F718FDFD</color>
+    <color name="tealPrimaryDark">#07DBF8</color>
+    <color name="tealColorAccent">#CEFFFFFF</color>
+
+
+<!--    Blue Theme Colors  -->
+    <color name="seaBluePrimary">#377EFA</color> <!--3F51B5-->  <!--#2897EF-->
+    <color name="seaBluePrimaryDark">#0042b4</color> <!--303F9F-->  <!--0061ae-->
+    <color name="seaBlueAccent">#FF4081</color> <!--FF4081-->
+</resources>

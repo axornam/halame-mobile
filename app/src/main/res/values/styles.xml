@@ -1,0 +1,40 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/tealPrimaryDark</item>
+        <item name="colorPrimaryDark">@color/tealPrimaryDark</item>
+        <item name="colorAccent">@color/tealColorAccent</item>
+    </style>
+
+
+    <style name="MenuStyle" parent="Theme.AppCompat.Light">
+        <item name="android:background">@android:color/white</item>
+    </style>
+
+    <!-- Dialog Style -->
+    <style name="AppCompatAlertDialogStyle" parent="Theme.AppCompat.Dialog.Alert">
+        <item name="colorAccent">#EB5F49</item>
+        <item name="android:textColorPrimary">#FFFFFF</item>
+        <item name="android:background">#43444c</item>
+    </style>
+
+
+    <style name="MyTheme" parent="ThemeOverlay.AppCompat.Light">
+        <item name="colorControlNormal">@android:color/white</item>
+        <item name="android:actionButtonStyle">@style/myActionButtonStyle</item>
+        <item name="actionButtonStyle">@style/myActionButtonStyle</item>
+    </style>
+
+    <style name="myActionButtonStyle" parent="Widget.AppCompat.ActionButton">
+        <item name="android:minWidth">24dp</item>
+        <item name="android:maxWidth">40dp</item>
+        <item name="android:width">40dp</item>
+    </style>
+
+    <style name="AlertDialog" parent="Base.Theme.AppCompat.Light.Dialog">
+
+    </style>
+
+</resources>
